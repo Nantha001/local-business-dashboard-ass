@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg{
+background-image: url("https://res.cloudinary.com/dvkq1wvmz/image/upload/v1751779122/banner-5195494_e36kxu.jpg");
+    background-size: cover;
+ height: 100vh;
+}
+
+.rating{
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+}
+.reviews{
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+}
+.heading{
+    color:rgb(33, 209, 165);
+    font-weight: bold;
+    font-size: 22px;
+}
+.name{
+     color:rgb(33, 209, 165);
+  
+    font-size: 20px;
+    font-weight: bold;
+}
+.location{
+     color:rgb(33, 209, 165);
+    font-weight: bold;
+   
+    font-size: 20px;
+}
