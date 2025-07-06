@@ -9,6 +9,12 @@ background-image: url("https://res.cloudinary.com/dvkq1wvmz/image/upload/v175177
  height: 100vh;
 }
 
+@media(max-width:732px){
+    .bg{
+        background-image: linear-gradient(to right, #141e30, #243b55);
+    }
+}
+
 .rating{
     color:white;
     font-weight: bold;
