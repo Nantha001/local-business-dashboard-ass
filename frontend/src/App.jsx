@@ -9,7 +9,7 @@ function App() {
 
   const handleFormSubmit = async (form) => {
     setFormValues(form);
-    const res = await fetch("http://localhost:3000/business-data", {
+    const res = await fetch("https://business-vvdp.onrender.com/business-data", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form)
@@ -19,7 +19,7 @@ function App() {
   };
 
   const handleRegenerate = async () => {
-    const res = await fetch(`http://localhost:3000/regenerate-headline?name=${formValues.name}&location=${formValues.location}`);
+    const res = await fetch(`https://business-vvdp.onrender.com/regenerate-headline?name=${formValues.name}&location=${formValues.location}`);
     const { headline } = await res.json();
     setBusinessData({ ...businessData, headline });
   };
