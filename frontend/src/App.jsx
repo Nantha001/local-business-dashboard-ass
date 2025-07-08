@@ -12,6 +12,7 @@ function App() {
   const [loader, setLoader] = useState(null);
 
   const handleFormSubmit = async (form) => {
+    setLoader(true);
     setFormValues(form);
     const res = await fetch("https://business-vvdp.onrender.com/business-data", {
       method: "POST",
